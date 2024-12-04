@@ -8,8 +8,8 @@ rmse_mat <- np$load('./data/RMSEmat.npy')
 rmse_mat_r <- as.array(rmse_mat)
 
 # Save the R array
-save(rmse_mat_r, file = './data/RMSEmat.RData')
+saveRDS(rmse_mat_r, file = './data/RMSEmat.rds')
 
 mae_mat <- np$load('./data/MAEmat.npy')
 mae_mat_r <- as.array(mae_mat)
-save(mae_mat_r, file = './data/MAEmat.RData')
+saveRDS(mae_mat_r, file = './data/MAEmat.rds')

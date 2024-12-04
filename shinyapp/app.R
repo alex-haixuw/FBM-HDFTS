@@ -1,8 +1,10 @@
 library(shiny)
 library(leaflet)
 
-# Load the data
-load("./MAEmat.RData")
+
+# load Rdata from a github repo
+MAEmat <- readRDS(url('https://github.com/alex-haixuw/FBM-HDFTS/blob/2386b430beaebb760c410be7fab63c0c0fc40f49/shinyapp/MAEmat.RData'))
+
 
 # Assuming the data is stored in a variable named 'MAEmat'
 # Replace 'MAEmat' with the actual variable name if different
